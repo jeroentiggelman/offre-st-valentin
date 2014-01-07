@@ -1,5 +1,6 @@
 @import "settings";
 @import "foundation";
+@import url(http://fonts.googleapis.com/css?family=Engagement);
 
 p { margin: 0; }
 #hero,
@@ -9,16 +10,47 @@ p { margin: 0; }
 	margin-bottom: 1em;
 	h1 {
 		color: #eee;
+		font-size: 2em;
 		margin-bottom: 1em;
 		text-align: center;
+		span {
+			color: $valentin;
+			font-family: 'Engagement', cursive;
+			font-size: 4em;
+		}
+	}
+	.tabs dd > a {
+		color: #ccc;
+		font-family: 'Engagement', cursive;
+		font-size: 1.75em;
+	}
+	.tabs dd.active a {
+		background: #222;
 	}
 	.tabs-content.vertical > .content {
-		background: #fff;
+		background: #222;
 		padding-top: 1em;
 		padding-bottom: 1em;
-		.prix {
-			color: $body-bg;
+		img {
+			margin-bottom: 1em;
 		}
+		p {
+			color: #eee;
+			text-align: center;
+			&:first-of-type {
+				font-size: 2em;
+			}
+		}
+		.prix {
+			color: lighten($valentin,10);
+		}
+		.compris {
+			color: lighten($body-bg,50);
+		}
+		.details {
+			font-size: .75em;
+		}
+
 	}
 }
 #form {
