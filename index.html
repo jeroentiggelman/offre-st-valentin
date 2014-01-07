@@ -3,158 +3,76 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Offre spécial St. Valentin</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
     <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
+      <section id="hero">
+        <h1>Offre spéciale St. Valentin</h1>
+        <ul class="example-orbit" data-orbit>
+          <li>
+            <img src="images/elle-pour-lui3.jpg" alt="Offre lui pour elle" />
+            <div class="orbit-caption">
+              Elle pour Lui
             </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
+          </li>
+          <li>
+            <img src="images/elle-pour-lui1.jpg" height="400" width="968" alt="Offre elle pour lui" />
+            <div class="orbit-caption">
+              Elle pour Lui
+            </div>
+          </li>
+          <li>
+            <img src="images/elle-pour-lui2.jpg" alt="Offre elle et lui" />
+            <div class="orbit-caption">
+              Elle pour Lui
+            </div>
+          </li>
+        </ul>
+      </section> <!-- hero -->
     </div>
 
     <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
+      <section id="offre">
+        <dl class="tabs vertical" data-tab>
+          <dd class="active"><a href="#panel1a">Lui pour elle</a></dd>
+          <dd><a href="#panel2a">Elle pour lui</a></dd>
+          <dd><a href="#panel3a">Elle et lui</a></dd>
+        </dl>
+        <div class="tabs-content vertical">
+          <div class="content active" id="panel1a">
+            <h3>Offrez un studio à votre chérie, avec un bon cadeau</h3>
+            <img src="images/elle-pour-lui4.jpg" height="400" width="968">
+            <p>Valeur&nbsp;: <span class="prix">150 € TTC</span>&nbsp;: session photo d'une heure, livraison des photos (bd et hd) + 5 tirages 13X18 des meilleures photos de son choix</p>
+            <p>Réservation des bons jusqu'au 13 février 2014 - studio à réaliser jusque fin mars 2014.</p>
+            <p>Dans votre réservation, choisissez&nbsp;: «&nbsp;Lui pour elle&nbsp;»</p>
+          </div>
+          <div class="content" id="panel2a">
+            <h3>Offrez des photos «&nbsp;boudoir&nbsp;» de vous à votre chéri</h3>
+            <img src="images/elle-pour-lui4.jpg" height="400" width="968">
+            <p>Valeur&nbsp;: <span class="prix">100 € TTC</span>&nbsp;: session photo d'une heure, livraison des rushes pour choix de 5 tirages à retoucher en 13X18 + 1 agrandissement Fineart 30X40 ou A3+ encadré.</p>
+            <p>Session photo à réaliser avant le 1er février 2014 pour pouvoir donner votre cadeau le 14 février.</p>
+            <p>Dans votre réservation, choisissez&nbsp;: «&nbsp;Elle pour lui&nbsp;»</p>
+          </div>
+          <div class="content" id="panel3a">
+            <h3>Offrez-vous une séance photo</h3>
+            <p>Valeur&nbsp;: <span class="prix">150 € TTC</span>&nbsp;: livraison des photos (bd et hd) + 5 tirages 13X18 des meilleures photos de votre choix</p>
+            <p>Session photo qui aura lieu le 14 février 2014 avant le resto ou votre soirée, pour vous mettre en appétit, dans notre studio avec chandelles et ambiance feutrée. Attention : les places sont limitées puisque la session photo dure une heure -> les premiers à réserver seront les premiers servis !</p>
+            <p>Dans votre réservation, choisissez&nbsp;: «&nbsp;Elle et lui&nbsp;»</p>
           </div>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
+      </section> <!-- offre -->
     </div>
+
+    <div class="row">
+      <section id="form">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, doloremque suscipit aut totam praesentium nobis omnis eligendi blanditiis molestiae minus perferendis adipisci optio est reiciendis illo temporibus assumenda tenetur sapiente.</p>
+      </section>
+    </div>
+
+    <!-- revenir vers le site principal -->    
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>

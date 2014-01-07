@@ -1,2 +1,32 @@
 @import "settings";
 @import "foundation";
+
+p { margin: 0; }
+#hero,
+#offre {
+	@include grid-column(12);
+	padding: 1em;
+	margin-bottom: 1em;
+	h1 {
+		color: #eee;
+		margin-bottom: 1em;
+		text-align: center;
+	}
+	.tabs-content.vertical > .content {
+		background: #fff;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		.prix {
+			color: $body-bg;
+		}
+	}
+}
+#form {
+	@include grid-column( $columns:12, $last-column:true, $center:true );
+  	background: #bada55;
+	padding: 1em;
+	margin-bottom: 1em;
+	@media #{$medium-up} {
+		@include grid-column( $columns:8, $last-column:true, $center:true );
+	}
+}
