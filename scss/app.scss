@@ -19,18 +19,33 @@ p { margin: 0; }
 			font-size: 4em;
 		}
 	}
+	// heart background image
+	@mixin symbol_nav_link {
+		background: url("../images/red-heart-60px_03.png") no-repeat;
+		background-position: 5px center;
+		background-size: 50px 50px;
+	}
 	.tabs dd > a {
 		color: #ccc;
 		font-family: 'Engagement', cursive;
 		font-size: 1.75em;
+		padding-left: 60px;
+		&:hover {
+			@include symbol_nav_link;
+			color: $valentin;
+		}
 	}
 	.tabs dd.active a {
 		background: #222;
+		&:hover {
+			@include symbol_nav_link;
+		}
 	}
 	.tabs-content.vertical > .content {
 		background: #222;
 		padding-top: 1em;
 		padding-bottom: 1em;
+		h3 { color: #eee; }
 		img {
 			margin-bottom: 1em;
 		}
@@ -42,7 +57,7 @@ p { margin: 0; }
 			}
 		}
 		.prix {
-			color: lighten($valentin,10);
+			color: darken($valentin,5);
 		}
 		.compris {
 			color: lighten($body-bg,50);
@@ -55,10 +70,17 @@ p { margin: 0; }
 }
 #form {
 	@include grid-column( $columns:12, $last-column:true, $center:true );
-  	background: #bada55;
-	padding: 1em;
 	margin-bottom: 1em;
+	iframe {
+		border: none;
+		height: 722px;
+		overflow: hidden;
+		width: 100%;
+		h1.ss-form-title {
+			font-weight: normal;
+		}
+	}
 	@media #{$medium-up} {
-		@include grid-column( $columns:8, $last-column:true, $center:true );
+		@include grid-column( $columns:6, $last-column:true, $center:true );
 	}
 }
