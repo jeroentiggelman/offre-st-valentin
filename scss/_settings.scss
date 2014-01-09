@@ -2,6 +2,10 @@
 // FOUNDATION SETTINGS
 //
 
+// Custom settings
+// Colors
+$valentin: #c8013c;
+
 // Uncomment to use rem-calc() in your settings
 // @import "foundation/functions";
 
@@ -50,7 +54,7 @@ $body-bg: #000;
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: rgba(darken($valentin,10),.5);
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -993,8 +997,3 @@ $tabs-navigation-font-color: #eee;
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
-
-// Custom settings
-// Colors
-$valentin: #c8013c;
-
