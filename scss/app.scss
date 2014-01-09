@@ -2,6 +2,10 @@
 @import "foundation";
 @import url(http://fonts.googleapis.com/css?family=Engagement);
 
+body {
+	background: url("../images/pattern-noir.jpg") top right;
+	background-attachment: fixed;
+}
 p { margin: 0; }
 #hero,
 #offre {
@@ -70,7 +74,7 @@ p { margin: 0; }
 }
 #form {
 	@include grid-column( $columns:12, $last-column:true, $center:true );
-	margin-bottom: 1em;
+	margin-bottom: 5em;
 	iframe {
 		border: none;
 		height: 722px;
