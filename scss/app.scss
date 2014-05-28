@@ -15,11 +15,13 @@ p { margin: 0; }
 		color: #eee;
 		font-size: 2em;
 		margin-bottom: 1em;
-		padding-right: 200px;
-		text-align: left;
-		margin-top: 3em;
+		padding-right: 20px;
+		text-align: center;
+		// margin-top: 0;
+		margin-bottom: 5em;
 		@media #{$medium-up} {
-				margin-top: 0;
+				margin-bottom: 1em;
+				text-align: left;
 			}
 		span {
 			color: $valentin;
@@ -41,61 +43,72 @@ p { margin: 0; }
 	@include grid-column(12);
 	padding: 1em;
 	margin-bottom: 1em;
-	// heart background image
-	@mixin symbol_nav_link {
-		background: url("../images/red-heart-60px_03.png") no-repeat;
-		background-position: 5px center;
-		background-size: 50px 50px;
-	}
-	.tabs dd > a {
-		color: #ccc;
+	h2 {
+		color: $valentin;
 		font-family: 'Engagement', cursive;
-		font-size: 1.75em;
-		padding-left: 60px;
-		&:hover {
-			@include symbol_nav_link;
+		font-size: 2.75em;	
+	}
+	p {
+		color: #ddd;
+		span {
 			color: $valentin;
 		}
 	}
-	.tabs dd.active a {
-		background: #222;
-		&:hover {
-			@include symbol_nav_link;
-		}
-	}
-	.tabs-content.vertical > .content {
-		background: #222;
-		padding-top: 1em;
-		padding-bottom: 1em;
-		float: none;
-		h3 { color: #eee; }
-		img {
-			margin-bottom: 1em;
-		}
-		p {
-			color: #eee;
-			text-align: center;
-			&:first-of-type {
-				font-size: 2em;
-			}
-		}
-		.prix {
-			color: darken($valentin,5);
-		}
-		.compris {
-			color: lighten($body-bg,50);
-		}
-		.details {
-			font-size: .75em;
-		}
-		.buttontabcontent {
-			display: block;
-			margin-top: 1em;
-			margin-bottom: 0;
-			text-align: center;
-			padding: 1em;
-		}
-	}
+	// // heart background image
+	// @mixin symbol_nav_link {
+	// 	background: url("../images/red-heart-60px_03.png") no-repeat;
+	// 	background-position: 5px center;
+	// 	background-size: 50px 50px;
+	// }
+	// .tabs dd > a {
+	// 	color: #ccc;
+	// 	font-family: 'Engagement', cursive;
+	// 	font-size: 1.75em;
+	// 	padding-left: 60px;
+	// 	&:hover {
+	// 		@include symbol_nav_link;
+	// 		color: $valentin;
+	// 	}
+	// }
+	// .tabs dd.active a {
+	// 	background: #222;
+	// 	&:hover {
+	// 		@include symbol_nav_link;
+	// 	}
+	// }
+	// .tabs-content.vertical > .content {
+	// 	background: #222;
+	// 	padding-top: 1em;
+	// 	padding-bottom: 1em;
+	// 	float: none;
+	// 	h3 { color: #eee; }
+	// 	img {
+	// 		margin-bottom: 1em;
+	// 	}
+	// 	p {
+	// 		color: #eee;
+	// 		text-align: center;
+	// 		&:first-of-type {
+	// 			font-size: 2em;
+	// 		}
+	// 	}
+	// 	.prix {
+	// 		color: darken($valentin,5);
+	// 	}
+	// 	.compris {
+	// 		color: lighten($body-bg,50);
+	// 	}
+	// 	.details {
+	// 		font-size: .75em;
+	// 	}
+	// 	.buttontabcontent {
+	// 		display: block;
+	// 		margin-top: 1em;
+	// 		margin-bottom: 0;
+	// 		text-align: center;
+	// 		padding: 1em;
+	// 	}
+	// }
 }
 .reserve {
 	background: url('../images/coeur-red-cta_03.png') no-repeat;
@@ -106,9 +119,10 @@ p { margin: 0; }
 	height: 130px;
 	padding-top: 40px;
 	position: absolute;
-	right: 50px;
+	right: 50%;
+	margin-right: -65px;
 	text-align: left;
-	top: 50px;
+	top: 165px;
 	width: 130px;
 	z-index: 20;
 	transform:rotate(7deg);
@@ -120,6 +134,11 @@ p { margin: 0; }
 		-webkit-animation:spin .75s linear;
     	-moz-animation:spin .75s linear;
     	animation:spin .75s linear;
+	}
+	@media #{$medium-up} {
+		margin-right: -0;
+		right: 50px;
+		top: 50px;
 	}
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
