@@ -111,7 +111,7 @@ p { margin: 0; }
 	// }
 }
 .reserve {
-	background: url('../images/coeur-red-cta_03.png') no-repeat;
+	background: url('../images/cta.png') no-repeat;
 	color: #ddd;
 	display: block;
 	font-family: 'Engagement', cursive;
@@ -129,7 +129,7 @@ p { margin: 0; }
 	-ms-transform:rotate(7deg); /* IE 9 */
 	-webkit-transform:rotate(7deg); /* Safari and Chrome */
 	&:hover {
-		background: url('../images/coeur-cta-hover2.png') no-repeat;
+		background: url('../images/cta-hover.png') no-repeat;
 		color: $valentin;
 		-webkit-animation:spin .75s linear;
     	-moz-animation:spin .75s linear;
