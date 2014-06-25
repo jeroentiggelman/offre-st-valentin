@@ -43,3 +43,9 @@ Thumbs.db
 # Compass.gitignore  #
 ######################
 .sass-cache
+# Codekit configuration  #
+######################
+config.codekit
+
+
+config.codekit
